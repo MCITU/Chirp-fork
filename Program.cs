@@ -1,7 +1,7 @@
-if (args[0] == "say")
+List<string> cheeps = new() { "Hello, BDSA students!", "Welcome to the course!", "I hope you had a good summer.", "Cheeping cheeps on Chirp :)" };
+
+foreach (var cheep in cheeps)
 {
-    var message = args[1];
-    var frequency = int.Parse(args[2]);
-    foreach (var i in Enumerable.Range(1, frequency))
-        Console.Write(message + " ");
+    Console.WriteLine(cheep);
+    Thread.Sleep(1000);
 }
